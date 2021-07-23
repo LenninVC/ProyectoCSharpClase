@@ -1,6 +1,6 @@
 using static System.Console;
 
-namespace CoreEscuela.Util
+namespace ProyectoCSharp.Util
 {
     public static class Printer
     {

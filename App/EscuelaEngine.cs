@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using CoreEscuela.Entidades;
+using ProyectoCSharp.Entidades;
 
-namespace CoreEscuela
+namespace ProyectoCSharp
 {
-    public class EscuelaEngine
+    public sealed class EscuelaEngine
     {
         public Escuela Escuela { get; set; }
 

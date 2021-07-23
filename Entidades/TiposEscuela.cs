@@ -1,4 +1,4 @@
-namespace CoreEscuela.Entidades
+namespace ProyectoCSharp.Entidades
 {
     public enum TiposEscuela
     {
