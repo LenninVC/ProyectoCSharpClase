@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ProyectoCSharp.Entidades
 {
-    public abstract class ObjetoEscuelaBase
+    public class ObjetoEscuelaBase
     {
         public string UniqueId { get; private set; }
         public string Nombre { get; set; }
