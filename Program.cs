@@ -16,6 +16,8 @@ namespace ProyectoCSharp
             //Printer.Beep(10000, cantidad:10);
             ImpimirCursosEscuela(engine.Escuela);
 
+            #region Polimorfismo
+                 /* POLIMORFISMO
             Printer.DrawLine(50);
             Printer.DrawLine(50);
             Printer.DrawLine(50);
@@ -40,7 +42,7 @@ namespace ProyectoCSharp
             WriteLine($"Alumno: {objDummy.GetType()}");
 
             /*No Seria valido si no ponemos (Alumno), y si lo igualamos al objeto objDummy (nos manda una excepcion)
-            alumnoTest=(Alumno)ob;*/
+            alumnoTest=(Alumno)ob;
 
             var evaluación= new Evaluacion(){Nombre="Evaluación de Mate",Nota=4.5f};
             Printer.WriteTitle("Evaluacion");
@@ -57,8 +59,9 @@ namespace ProyectoCSharp
 
             /* Con esta declaracion no sale el error al codificar, sale el error en la ejecucion ya que no es posible
             alumnoTest=(Alumno)(ObjetoEscuelaBase)evaluación;*/
-
-            
+            #endregion
+           
+            var listaObjetos= engine.GetObjetosEscuela();
 
         }
 
