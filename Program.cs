@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using ProyectoCSharp.Entidades;
 using ProyectoCSharp.Util;
 using static System.Console;
+using System.Linq;
 
 namespace ProyectoCSharp
 {
@@ -62,6 +63,10 @@ namespace ProyectoCSharp
             #endregion
            
             var listaObjetos= engine.GetObjetosEscuela();
+
+            var listaILugar= from obj in listaObjetos
+                             where obj is ILugar
+                             select (ILugar) obj;
 
         }
 
