@@ -62,11 +62,14 @@ namespace ProyectoCSharp
             alumnoTest=(Alumno)(ObjetoEscuelaBase)evaluación;*/
             #endregion
            
-            var listaObjetos= engine.GetObjetosEscuela();
+            var listaObjetos= engine.GetObjetosEscuela(false,false,false,false);
 
-            var listaILugar= from obj in listaObjetos
+            #region linq
+            /*var listaILugar= from obj in listaObjetos
                              where obj is ILugar
-                             select (ILugar) obj;
+                             select (ILugar) obj;*/
+            #endregion
+
 
         }
 
