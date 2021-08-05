@@ -61,8 +61,6 @@ namespace ProyectoCSharp
             /* Con esta declaracion no sale el error al codificar, sale el error en la ejecucion ya que no es posible
             alumnoTest=(Alumno)(ObjetoEscuelaBase)evaluación;*/
             #endregion
-           
-            var listaObjetos= engine.GetObjetosEscuela(false,false,false,false);
 
             #region linq
             /*var listaILugar= from obj in listaObjetos
@@ -70,6 +68,10 @@ namespace ProyectoCSharp
                              select (ILugar) obj;*/
             #endregion
 
+            var listaObjetos= engine.GetObjetosEscuela(
+                out int conteoEvaluciones, out int conteoCursos,
+                out int conteoAsignaturas, out int conteoAlumnos
+            );
 
         }
 
